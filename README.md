@@ -1,2 +1,2 @@
 # react-dash-spa
-Dmitriy
+Dmitriy Romanovskiy
