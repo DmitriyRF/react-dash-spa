@@ -1,2 +1,4 @@
 # react-dash-spa
-Dmitriy Romanovskiy
+
+1. npm install
+2. npm start
