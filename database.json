@@ -4,19 +4,22 @@
         {
             "id": 1,
             "title": "Home",
-            "url": "http://react-dash-spa/home"
+            "url": "http://react-dash-spa/home",
+            "content": ""
         },
 
         {
             "id": 2,
             "title": "FAQ",
-            "url": "http://react-dash-spa/faq"
+            "url": "http://react-dash-spa/faq",
+            "content": ""
         },
 
         {
             "id": 3,
             "title": "Help",
-            "url": "http://react-dash-spa/help"
+            "url": "http://react-dash-spa/help",
+            "content": ""
         }
 
     ],
@@ -33,43 +36,48 @@
 
         {
             "id": 1,
-            "name": "Sample-P"
+            "name": "Sample-P",
             "company_id": 1,
             "architect": 2,
+            "customer": 3,
             "startDate": "01.02.2018",
-            "ebdDate": "01.02.2018"
+            "endDate": "01.02.2018"
         },
 
         {
-            "id": 1,
-            "name": "Sample-P"
+            "id": 2,
+            "name": "Sample-P",
             "company_id": 1,
             "architect": 2,
+            "customer": 3,
             "startDate": "01.02.2018",
-            "ebdDate": "01.02.2018"
+            "endDate": "01.02.2018"
         },
 
         {
-            "id": 1,
-            "name": "Sample-P"
+            "id": 3,
+            "name": "Sample-P",
             "company_id": 1,
             "architect": 2,
+            "customer": 3,
             "startDate": "01.02.2018",
-            "ebdDate": "01.02.2018"
+            "endDate": "01.02.2018"
         },
 
         {
-            "id": 1,
-            "name": "Sample-P"
+            "id": 4,
+            "name": "Sample-P",
             "company_id": 1,
             "architect": 2,
+            "customer": 3,
             "startDate": "01.02.2018",
-            "ebdDate": "01.02.2018"
+            "endDate": "01.02.2018"
         }
     ],
     "users": [
         {
             "id": 1,
+            "company_id": 1,
             "name": "Sample-U",
             "email": "sample@mail.com",
             "startDate": "01.01.2018",
@@ -79,6 +87,7 @@
 
         {
             "id": 2,
+            "company_id": 1,
             "name": "Sample-U",
             "email": "sample@mail.com",
             "startDate": "01.01.2018",
@@ -88,6 +97,7 @@
 
         {
             "id": 3,
+            "company_id": 1,
             "name": "Sample-U",
             "email": "sample@mail.com",
             "startDate": "01.01.2018",
@@ -95,7 +105,8 @@
         },
 
         {
-            "id": 3,
+            "id": 4,
+            "company_id": 1,
             "name": "SampleC",
             "email": "sample@mail.com",
             "startDate": "01.01.2018",
