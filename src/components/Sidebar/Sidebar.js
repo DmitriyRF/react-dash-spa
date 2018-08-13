@@ -11,4 +11,4 @@ import './Sidebar.css'
         </div>
     )
 };
-export default Sidebar
+export default Sidebar;
