@@ -1,123 +1,108 @@
-{
-    "pages": [
-
-        {
-            "id": 1,
-            "title": "Home",
-            "url": "http://react-dash-spa/home",
-            "content": ""
-        },
-
-        {
-            "id": 2,
-            "title": "FAQ",
-            "url": "http://react-dash-spa/faq",
-            "content": ""
-        },
-
-        {
-            "id": 3,
-            "title": "Help",
-            "url": "http://react-dash-spa/help",
-            "content": ""
-        }
-
+[
+  {
+    "id": 1,
+    "title": "EPAM Systems",
+    "employees": [
+      {
+        "id": 1,
+        "fullName": "Ivan Ivanov",
+        "email": "ivan@epam.com",
+        "level": "junior",
+        "startDate": "2018-08-10"
+      },
+      {
+        "id": 2,
+        "fullName": "Petr Petrov",
+        "email": "petr@epam.com",
+        "level": "junior",
+        "startDate": "2018-08-11"
+      },
+      {
+        "id": 3,
+        "fullName": "Gena genov",
+        "email": "gena@epam.com",
+        "level": "senior",
+        "startDate": "2014-08-11"
+      }
     ],
-
-    "companies": [
-
-        {
-            "id": 1,
-            "companyName": "Epam System"
-        }
+    "projects": [
+      {
+        "id": 1,
+        "name": "Project1",
+        "architect": "Architect1",
+        "customer": "Customer1",
+        "startDate": "2018-08-11",
+        "endDate": "2018-12-11"
+      },
+      {
+        "id": 2,
+        "name": "Project2",
+        "architect": "Architect2",
+        "customer": "Customer2",
+        "startDate": "2018-08-11",
+        "endDate": "2018-12-11"
+      },
+      {
+        "id": 3,
+        "name": "Project3",
+        "architect": "Architect3",
+        "customer": "Customer3",
+        "startDate": "2018-08-11",
+        "endDate": "2018-12-11"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Hello World LLC",
+    "employees": [
+      {
+        "id": 1,
+        "fullName": "Ivan Ivanov",
+        "email": "ivan@hw.com",
+        "level": "junior",
+        "startDate": "2018-08-10"
+      },
+      {
+        "id": 2,
+        "fullName": "Petr Petrov",
+        "email": "petr@hw.com",
+        "level": "junior",
+        "startDate": "2018-08-11"
+      },
+      {
+        "id": 3,
+        "fullName": "Gena genov",
+        "email": "gena@hw.com",
+        "level": "senior",
+        "startDate": "2014-08-11"
+      }
     ],
-
-    "projects":[
-
-        {
-            "id": 1,
-            "name": "Sample-P",
-            "company_id": 1,
-            "architect": 2,
-            "customer": 3,
-            "startDate": "01.02.2018",
-            "endDate": "01.02.2018"
-        },
-
-        {
-            "id": 2,
-            "name": "Sample-P",
-            "company_id": 1,
-            "architect": 2,
-            "customer": 3,
-            "startDate": "01.02.2018",
-            "endDate": "01.02.2018"
-        },
-
-        {
-            "id": 3,
-            "name": "Sample-P",
-            "company_id": 1,
-            "architect": 2,
-            "customer": 3,
-            "startDate": "01.02.2018",
-            "endDate": "01.02.2018"
-        },
-
-        {
-            "id": 4,
-            "name": "Sample-P",
-            "company_id": 1,
-            "architect": 2,
-            "customer": 3,
-            "startDate": "01.02.2018",
-            "endDate": "01.02.2018"
-        }
-    ],
-    "users": [
-        {
-            "id": 1,
-            "company_id": 1,
-            "name": "Sample-U",
-            "email": "sample@mail.com",
-            "startDate": "01.01.2018",
-            "userType": 1,
-            "emploeersLevel": "Senior"
-        },
-
-        {
-            "id": 2,
-            "company_id": 1,
-            "name": "Sample-U",
-            "email": "sample@mail.com",
-            "startDate": "01.01.2018",
-            "userType": 1,
-            "emploeersLevel": "Senior"
-        },
-
-        {
-            "id": 3,
-            "company_id": 1,
-            "name": "Sample-U",
-            "email": "sample@mail.com",
-            "startDate": "01.01.2018",
-            "userType": 1
-        },
-
-        {
-            "id": 4,
-            "company_id": 1,
-            "name": "SampleC",
-            "email": "sample@mail.com",
-            "startDate": "01.01.2018",
-            "userType": 2
-        }
-    ],
-    
-    "users_meta":{
-
-    	"userTypes": ["Employees", "Customer"]
-    }
-
-
-}
+    "projects": [
+      {
+        "id": 1,
+        "name": "Project1",
+        "architect": "Architect1",
+        "customer": "Customer1",
+        "startDate": "2018-08-11",
+        "endDate": "2018-12-11"
+      },
+      {
+        "id": 2,
+        "name": "Project2",
+        "architect": "Architect2",
+        "customer": "Customer2",
+        "startDate": "2018-08-11",
+        "endDate": "2018-12-11"
+      },
+      {
+        "id": 3,
+        "name": "Project3",
+        "architect": "Architect3",
+        "customer": "Customer3",
+        "startDate": "2018-08-11",
+        "endDate": "2018-12-11"
+      }
+    ]
+  }
+]
