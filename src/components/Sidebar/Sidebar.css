@@ -1,28 +1,27 @@
 .sidebar {
-    width: 200px;
-    height: calc(100vh - 190px);
-    background: cadetblue;
-    margin-right: 20px;
+  width: 200px;
+  height: calc(100vh - 190px);
+  background: cadetblue;
+  margin-right: 20px;
 }
 
 .menu {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .menu a {
-    display: block;
-    padding: 10px 20px;
-    color: #ddd;
-    text-decoration: none;
+  display: block;
+  padding: 10px 20px;
+  color: #ddd;
+  text-decoration: none;
 }
 
 .menu a.active {
-    background: rgba(0, 0, 0, 0.1);
-    color: white;
+  background: rgba(0, 0, 0, 0.1);
+  color: white;
 }
 
 .menu a:hover {
-    color: #eee;
-    background: rgba(255, 255, 255, 0.1);
+  color: #eee;
+  background: rgba(255, 255, 255, 0.1);
 }
-
