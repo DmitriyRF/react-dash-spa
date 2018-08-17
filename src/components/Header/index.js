@@ -1,10 +1,10 @@
 import React from 'react';
-import './Header.css';
+import './header.css';
 
 const header = () => {
 
     return (
-        <header className='Header' >
+        <header id='header' >
             <a className="header-brand" href="">React Dash SPA</a>
             <div className='right-wrapper'>            
                 <nav className="navbar">
