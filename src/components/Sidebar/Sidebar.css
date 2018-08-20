@@ -1,6 +1,6 @@
 .sidebar {
   width: 200px;
-  height: calc(100vh - 190px);
+  height: calc(100vh - 55px);
   background: cadetblue;
   margin-right: 20px;
 }
