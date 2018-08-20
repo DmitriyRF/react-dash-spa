@@ -1,14 +1,12 @@
+
 import React from 'react';
 import Sidebar from './components/Sidebar';
-import logo from './logo.svg';
+import Header from './components/Header';
 import './App.css';
 
 const App = () => (
   <div className="App">
-    <header className="App-header">
-      <img src={logo} className="App-logo" alt="logo" />
-      <h1 className="App-title">Welcome to React</h1>
-    </header>
+    <Header />
     <div className="container">
       <Sidebar />
       <div className="content">
@@ -18,6 +16,6 @@ const App = () => (
       </div>
     </div>
   </div>
-);
+); 
 
 export default App;
