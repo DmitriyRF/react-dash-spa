@@ -3,7 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './header.css';
 
-const header = () => (
+const Header = () => (
   <header id="header">
     <Link to="/" className="header-brand">
       React Dash SPA
@@ -36,4 +36,4 @@ const header = () => (
   </header>
 );
 
-export default header;
+export default Header;
