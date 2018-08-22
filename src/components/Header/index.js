@@ -1,24 +1,25 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './header.css';
 
-const header = () => (
+const Header = () => (
   <header id="header">
-    <a className="header-brand" href="">
+    <Link to="/" className="header-brand">
       React Dash SPA
-    </a>
+    </Link>
     <div className="right-wrapper">
       <nav className="navbar">
         <ul className="navbar-nav">
           <li className="nav-item">
-            <a className="nav-link" href="">
+            <Link to="/faq" className="nav-link">
               FAQ
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="">
+            <Link to="/help" className="nav-link">
               Help
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>
@@ -35,4 +36,4 @@ const header = () => (
   </header>
 );
 
-export default header;
+export default Header;
