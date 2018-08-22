@@ -3,18 +3,23 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './header.css';
 
-
 const header = () => (
   <header id="header">
-    <Link to='/' className="header-brand"> React Dash SPA</Link>
+    <Link to="/" className="header-brand">
+      React Dash SPA
+    </Link>
     <div className="right-wrapper">
       <nav className="navbar">
         <ul className="navbar-nav">
           <li className="nav-item">
-            <Link to='/faq' className="nav-link">FAQ</Link>
+            <Link to="/faq" className="nav-link">
+              FAQ
+            </Link>
           </li>
           <li className="nav-item">
-            <Link to='/help' className="nav-link">Help</Link>
+            <Link to="/help" className="nav-link">
+              Help
+            </Link>
           </li>
         </ul>
       </nav>
