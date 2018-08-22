@@ -1,21 +1,21 @@
-
-import React from 'react';
-import Sidebar from './components/Sidebar';
+import React, { Component } from 'react';
+import { BrowserRouter } from 'react-router-dom';
 import Header from './components/Header';
+import Main from './components/Main';
 import './App.css';
 
-const App = () => (
-  <div className="App">
-    <Header />
-    <div className="container">
-      <Sidebar />
-      <div className="content">
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    </div>
-  </div>
-); 
+class App extends Component {
+
+  render () {
+    return (
+      <BrowserRouter>
+        <div className="App">
+          <Header />
+          <Main />
+        </div>
+      </BrowserRouter>
+    );
+  }
+}; 
 
 export default App;

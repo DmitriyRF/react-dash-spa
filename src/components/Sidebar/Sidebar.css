@@ -3,6 +3,7 @@
   height: calc(100vh - 55px);
   background: cadetblue;
   margin-right: 20px;
+  padding: 1px 0;
 }
 
 .menu {

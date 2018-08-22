@@ -1,25 +1,20 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './header.css';
 
 
 const header = () => (
   <header id="header">
-    <a className="header-brand" href="">
-      React Dash SPA
-    </a>
+    <Link to='/' className="header-brand"> React Dash SPA</Link>
     <div className="right-wrapper">
       <nav className="navbar">
         <ul className="navbar-nav">
           <li className="nav-item">
-            <a className="nav-link" href="">
-              FAQ
-            </a>
+            <Link to='/faq' className="nav-link">FAQ</Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="">
-              Help
-            </a>
+            <Link to='/help' className="nav-link">Help</Link>
           </li>
         </ul>
       </nav>
