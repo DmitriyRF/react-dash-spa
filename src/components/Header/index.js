@@ -5,20 +5,20 @@ const header = () => {
 
     return (
         <header id='header' >
-            <a className="header-brand" href="">React Dash SPA</a>
+            <a className="header-brand" href="/">React Dash SPA</a>
             <div className='right-wrapper'>            
                 <nav className="navbar">
                     <ul className="navbar-nav">
                         <li className="nav-item">
-                            <a className="nav-link" href="">FAQ</a>
+                            <a className="nav-link" href="/">FAQ</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="">Help</a>
+                            <a className="nav-link" href="/">Help</a>
                         </li>
                     </ul>
                 </nav>
                 <form className="form-inline header-form">
-                    <button className="btn" type="submit"></button>
+                    <button className="btn" type="submit" /> 
                     <input className="form-control" type="search" placeholder="" aria-label="Search" />
                 </form>
             </div>
