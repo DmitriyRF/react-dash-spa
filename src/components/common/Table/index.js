@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
-import TableHeader from './TableHeader';
-import TableRow from './TableRow';
+import Header from './Header';
+import Row from './Row';
 import './style.css';
 
 class CustomTable extends Component {
@@ -10,15 +10,18 @@ class CustomTable extends Component {
     return (
       <table>
         <thead>
-          <TableHeader columns={columns} />
+          <Header columns={columns}/>
         </thead>
         <tbody>
-          {data.map(row => {
-            return <TableRow key={row.id} columns={columns} row={row} />;
-          })}
+        {
+          data.map(row => {
+            return <Row key={row.id} columns={columns} row={row}/>;
+          })
+        }
         </tbody>
       </table>
     );
   }
 }
+
 export default CustomTable;
