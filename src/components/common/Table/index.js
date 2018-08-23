@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
-import CustomTableHead from './CustomTableHead';
-import CustomTableRow from './CustomTableRow';
-import './CustomTable.css';
+import TableHeader from './TableHeader';
+import TableRow from './TableRow';
+import './style.css';
 
 class CustomTable extends Component {
   render() {
@@ -10,11 +10,11 @@ class CustomTable extends Component {
     return (
       <table>
         <thead>
-          <CustomTableHead columns={columns} />
+          <TableHeader columns={columns} />
         </thead>
         <tbody>
           {data.map(row => {
-            return <CustomTableRow key={row.id} columns={columns} row={row} />;
+            return <TableRow key={row.id} columns={columns} row={row} />;
           })}
         </tbody>
       </table>

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import CustomTable from '../../components/CustomTable';
+import Table from '../../components/common/Table';
 
 export default () => {
   const data = [
@@ -51,7 +51,7 @@ export default () => {
   return (
     <div>
       employees
-      <CustomTable columns={columns} data={data} />
+      <Table columns={columns} data={data} />
     </div>
   );
 };

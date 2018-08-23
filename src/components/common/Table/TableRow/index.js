@@ -1,16 +1,16 @@
 /* eslint-disable react/no-array-index-key */
 import React, { Component } from 'react';
 
-class CustomTableHead extends Component {
+class TableRow extends Component {
   render() {
     const { columns, row } = this.props;
     return (
       <tr>
-        {columns.map((column, i) => {
-          return <td key={i}>{row[column.field] || ''}</td>;
-        })}
+        {columns.map((column, i) => (
+          <td key={i}>{row[column.field] || ''}</td>
+        ))}
       </tr>
     );
   }
 }
-export default CustomTableHead;
+export default TableRow;
