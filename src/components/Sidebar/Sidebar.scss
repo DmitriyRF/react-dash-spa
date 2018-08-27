@@ -8,21 +8,18 @@
 
 .menu {
   margin-top: 20px;
-}
-
-.menu a {
-  display: block;
-  padding: 10px 20px;
-  color: #ddd;
-  text-decoration: none;
-}
-
-.menu a.active {
-  background: rgba(0, 0, 0, 0.1);
-  color: white;
-}
-
-.menu a:hover {
-  color: #eee;
-  background: rgba(255, 255, 255, 0.1);
+  a {
+    display: block;
+    padding: 10px 20px;
+    color: #ddd;
+    text-decoration: none;
+    &.active {
+      background: rgba(0, 0, 0, 0.1);
+      color: white;
+    }
+    &:hover {
+      color: #eee;
+      background: rgba(255, 255, 255, 0.1);
+    }
+  }
 }
