@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Sidebar.css';
+import './Sidebar.scss';
 
 const Sidebar = () => (
   <div className="sidebar">
     <div className="menu">
       <Link to="/"> EPAM System</Link>
-      <br/>
+      <br />
       <Link to="/employees"> Employees</Link>
       <Link to="/projects"> Projects</Link>
     </div>
