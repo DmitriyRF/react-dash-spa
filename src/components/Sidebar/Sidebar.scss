@@ -1,24 +1,28 @@
 .sidebar {
   width: 200px;
   height: calc(100vh - 55px);
-  background: cadetblue;
   margin-right: 20px;
   padding: 1px 0;
+
+  background: cadetblue;
 }
 
 .menu {
   margin-top: 20px;
   a {
     display: block;
+
     padding: 10px 20px;
-    color: #ddd;
+
     text-decoration: none;
+
+    color: #dddddd;
     &.active {
+      color: white ;
       background: rgba(0, 0, 0, 0.1);
-      color: white;
     }
     &:hover {
-      color: #eee;
+      color: #eeeeee;
       background: rgba(255, 255, 255, 0.1);
     }
   }
