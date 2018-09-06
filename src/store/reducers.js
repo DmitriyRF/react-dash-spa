@@ -1,3 +1,4 @@
-import company from './company/reducer';
+import company from 'Components/Sidebar/CompanySwitcher/reducers';
+import employees from '../pages/Employees/reducers';
 
-export { company };
+export { company, employees };

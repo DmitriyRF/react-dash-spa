@@ -2,6 +2,9 @@ const commonPaths = require('./paths');
 
 module.exports = {
   mode: 'development',
+  devServer: {
+    historyApiFallback: true
+  },
   output: {
     filename: '[name].js',
     path: commonPaths.outputPath,

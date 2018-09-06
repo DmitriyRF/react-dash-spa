@@ -1,53 +1,34 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import Table from 'Components/common/Table';
+import { fetchEmployees } from './actions';
+import { getEmployees } from './selectors';
 
-import Table from '../../components/common/Table';
-import * as companySelectors from '../../store/company/reducer';
+import columnConfig from './config';
 
-class Sidebar extends Component {
-  constructor(props) {
-    super(props);
-    const columns = [
-      {
-        field: 'fullName',
-        title: 'Name'
-      },
-      {
-        field: 'email',
-        title: 'Email'
-      },
-      {
-        field: 'level',
-        title: 'Level'
-      },
-      {
-        field: 'startDate',
-        title: 'Start Date'
-      },
-      {
-        field: null,
-        title: 'Action'
-      }
-    ];
-    this.state = { columns };
+class Employee extends Component {
+  componentDidMount() {
+    this.props.fetchEmployees();
   }
 
   render() {
-    const { columns } = this.state;
     const { employees } = this.props;
     return (
       <div>
         employees
-        <Table columns={columns} data={employees} />
+        <Table columns={columnConfig} data={employees} />
       </div>
     );
   }
 }
-function mapStateToProps(state) {
-  const employees = companySelectors.getEmployees(state);
-  return {
-    employees
-  };
-}
 
-export default connect(mapStateToProps)(Sidebar);
+const mapStateToProps = state => getEmployees(state);
+
+const mapDispatchToProps = dispatch => ({
+  fetchEmployees: () => dispatch(fetchEmployees())
+});
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Employee);
