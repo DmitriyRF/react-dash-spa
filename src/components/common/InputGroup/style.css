@@ -1,0 +1,17 @@
+.input-group{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+.input{
+    padding: 5px 10px;
+}
+.has-error .input-label {
+    color: red;
+}
+.has-error .input {
+    border: red solid 1px;
+}
+.has-error .error-text {
+    color: red;
+}
