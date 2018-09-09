@@ -1,0 +1,2 @@
+export const EMPLOYEES_FETCHED = 'EMPLOYEES_FETCHED';
+export default EMPLOYEES_FETCHED;

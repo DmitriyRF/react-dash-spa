@@ -1,57 +1,34 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import Table from 'Components/common/Table';
+import { fetchEmployees } from './actions';
+import { getEmployees } from './selectors';
 
-import Table from '../../components/common/Table';
+import columnConfig from './config';
 
-export default () => {
-  const data = [
-    {
-      id: 1,
-      fullName: 'Ivan Ivanov',
-      email: 'ivan@epam.com',
-      level: 'junior',
-      startDate: '2018-08-10'
-    },
-    {
-      id: 2,
-      fullName: 'Petr Petrov',
-      email: 'petr@epam.com',
-      level: 'junior',
-      startDate: '2018-08-11'
-    },
-    {
-      id: 3,
-      fullName: 'Gena genov',
-      email: 'gena@epam.com',
-      level: 'senior',
-      startDate: '2014-08-11'
-    }
-  ];
-  const columns = [
-    {
-      field: 'fullName',
-      title: 'Name'
-    },
-    {
-      field: 'email',
-      title: 'Email'
-    },
-    {
-      field: 'level',
-      title: 'Level'
-    },
-    {
-      field: 'startDate',
-      title: 'Start Date'
-    },
-    {
-      field: null,
-      title: 'Action'
-    }
-  ];
-  return (
-    <div>
-      employees
-      <Table columns={columns} data={data} />
-    </div>
-  );
-};
+class Employee extends Component {
+  componentDidMount() {
+    this.props.fetchEmployees();
+  }
+
+  render() {
+    const { employees } = this.props;
+    return (
+      <div>
+        employees
+        <Table columns={columnConfig} data={employees} />
+      </div>
+    );
+  }
+}
+
+const mapStateToProps = state => getEmployees(state);
+
+const mapDispatchToProps = dispatch => ({
+  fetchEmployees: () => dispatch(fetchEmployees())
+});
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Employee);

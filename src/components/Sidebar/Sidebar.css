@@ -16,6 +16,9 @@
   color: #ddd;
   text-decoration: none;
 }
+.menu select {
+  margin: 10px 20px;
+}
 
 .menu a.active {
   background: rgba(0, 0, 0, 0.1);
