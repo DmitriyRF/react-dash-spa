@@ -1,9 +1,19 @@
 const webpack = require('webpack');
 const commonPaths = require('./paths');
+const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: commonPaths.entryPath,
+  resolve: {
+    extensions: ['*', '.js', '.jsx'],
+    alias: {
+      Data: path.resolve('src/data'),
+      Components: path.resolve('src/components'),
+      Store: path.resolve('src/store'),
+      "@": path.resolve('src'),
+    },
+  },
   module: {
     rules: [
       {
@@ -12,13 +22,13 @@ module.exports = {
         loader: 'eslint-loader',
         exclude: /(node_modules)/,
         options: {
-          emitWarning: process.env.NODE_ENV !== 'production',
-        },
+          emitWarning: process.env.NODE_ENV !== 'production'
+        }
       },
       {
         test: /\.(js|jsx)$/,
         loader: 'babel-loader',
-        exclude: /(node_modules)/,
+        exclude: /(node_modules)/
       },
       {
         test: /\.(png|jpg|gif|svg)$/,
@@ -26,10 +36,10 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
-              outputPath: commonPaths.imagesFolder,
-            },
-          },
-        ],
+              outputPath: commonPaths.imagesFolder
+            }
+          }
+        ]
       },
       {
         test: /\.(woff2|ttf|woff|eot)$/,
@@ -37,20 +47,18 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
-              outputPath: commonPaths.fontsFolder,
-            },
-          },
-        ],
-      },
-    ],
+              outputPath: commonPaths.fontsFolder
+            }
+          }
+        ]
+      }
+    ]
   },
-  resolve: {
-    extensions: ['*', '.js', '.jsx'],
-  },
+
   plugins: [
     new webpack.ProgressPlugin(),
     new HtmlWebpackPlugin({
-      template: commonPaths.templatePath,
-    }),
-  ],
+      template: commonPaths.templatePath
+    })
+  ]
 };

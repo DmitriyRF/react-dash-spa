@@ -1,6 +1,6 @@
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const commonPaths = require('./paths');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const commonPaths = require('./paths');
 
 module.exports = {
   mode: 'production',
