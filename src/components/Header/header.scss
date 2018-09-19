@@ -1,39 +1,48 @@
 #header {
-  background-color: #d4e1f5;
-  border: 2px solid #5389d6;
   min-height: 50px;
+
+  border: 2px solid $header-border-color;
+  background-color: $header-background;
   .header-brand {
-    font-size: 18px;
-    color: #151618;
-    margin-left: 30px;
     display: inline-block;
+
+    margin-left: 30px;
     padding: 15px 0;
+
     text-decoration: none;
+
+    color: #151618;
+
+    font-size: 18px;
   }
   .header-form {
-    display: inline-block;
     position: relative;
+
+    display: inline-block;
     button {
       position: absolute;
-      background: transparent;
-      border: 0;
+      top: 4px;
+      left: 7px;
+
       width: 13px;
       height: 13px;
-      left: 7px;
-      top: 4px;
-      background-size: contain;
-      background-repeat: no-repeat;
+
+      border: 0;
+      background: transparent;
       background-image: url('../../assets/img/search-icon.png');
+      background-repeat: no-repeat;
+      background-size: contain;
       &:active {
         outline: none;
       }
     }
     input {
       min-width: 206px;
-      border: 2px solid #999999;
-      border-radius: 20px;
       min-height: 22px;
       padding: 0 5px 0 20px;
+
+      border: 2px solid $search-border-color;
+      border-radius: 20px;
       &:focus {
         outline: none;
       }
@@ -47,14 +56,17 @@
   }
   .nav-item {
     display: inline-block;
+
     margin-right: 12px;
     a {
-      color: #0000ff;
+      color: $link-color;
+
       font-size: 16px;
     }
   }
   .right-wrapper {
     float: right;
+
     margin-right: 6px;
   }
 }

@@ -9,4 +9,5 @@ module.exports = {
   fontsFolder: 'fonts',
   cssFolder: 'css',
   jsFolder: 'js',
+  scssResources: require(path.join(process.cwd(), 'src/assets/sass/scss-utils'))
 };

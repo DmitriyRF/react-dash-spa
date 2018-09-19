@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "fullName": "Ivan Ivanov",
+    "architect": "Ivan Petrov",
+    "customer": "Ivan Smirnov",
+    "startDate": "2018-08-10",
+    "endDate": "2018-10-10",
+    "companyId": 1
+  },
+  {
+    "id": 1,
+    "fullName": "Ivan Petrov",
+    "architect": "Ivan Smirnov",
+    "customer": "Ivan Vasilev",
+    "startDate": "2018-08-10",
+    "endDate": "2018-10-10",
+    "companyId": 1
+  },
+  {
+    "id": 1,
+    "fullName": "Ivan Smirnov",
+    "architect": "Ivan Vasilev",
+    "customer": "Ivan Mihailov",
+    "startDate": "2018-08-10",
+    "endDate": "2018-10-10",
+    "companyId": 1
+  },
+  {
+    "id": 1,
+    "fullName": "Ivan Vasilev",
+    "architect": "Ivan Mihailov",
+    "customer": "Ivan Kuznetsov",
+    "startDate": "2018-08-10",
+    "endDate": "2018-10-10",
+    "companyId": 1
+  },
+  {
+    "id": 1,
+    "fullName": "Ivan Mihailov",
+    "architect": "Ivan Kuznetsov",
+    "customer": "Ivan Sokolov",
+    "startDate": "2018-08-10",
+    "endDate": "2018-10-10",
+    "companyId": 2
+  },
+  {
+    "id": 1,
+    "fullName": "Ivan Kuznetsov",
+    "architect": "Ivan Sokolov",
+    "customer": "Ivan Orlov",
+    "startDate": "2018-08-10",
+    "endDate": "2018-10-10",
+    "companyId": 2
+  },
+  {
+    "id": 1,
+    "fullName": "Ivan Sokolov",
+    "architect": "Ivan Orlov",
+    "customer": "Ivan Ivanov",
+    "startDate": "2018-08-10",
+    "endDate": "2018-10-10",
+    "companyId": 2
+  },
+  {
+    "id": 1,
+    "fullName": "Ivan Orlov",
+    "architect": "Ivan Ivanov",
+    "customer": "Ivan Fedorov",
+    "startDate": "2018-08-10",
+    "endDate": "2018-10-10",
+    "companyId": 2
+  }
+]

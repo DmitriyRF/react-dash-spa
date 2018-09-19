@@ -8,7 +8,7 @@ module.exports = {
   output: {
     filename: '[name].js',
     path: commonPaths.outputPath,
-    chunkFilename: '[name].js',
+    chunkFilename: '[name].js'
   },
   module: {
     rules: [
@@ -20,12 +20,20 @@ module.exports = {
             loader: 'css-loader',
             options: {
               sourceMap: true,
-              localIdentName: '[local]___[hash:base64:5]',
-            },
+              localIdentName: '[local]___[hash:base64:5]'
+            }
           },
-          'sass-loader',
-        ],
-      },
-    ],
-  },
+          {
+            loader: 'sass-loader'
+          },
+          {
+            loader: 'sass-resources-loader',
+            options: {
+              resources: commonPaths.scssResources
+            }
+          }
+        ]
+      }
+    ]
+  }
 };
