@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import Table from '@/components/common/Table';
-import tableColumnsName from './tableColumnsName.json';
+import tableColumnsName from './tableColumnsConfig';
 import { getProjects, InitProjects } from './action';
 
 class Projects extends React.Component {
