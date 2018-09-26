@@ -16,9 +16,9 @@
 
     text-decoration: none;
 
-    color: $side-link-color-hover;
+    color: $side-link-color;
     &.active {
-      color: white;
+      color: $side-link-color-hover;
       background: $side-link-color-bg-dark;
     }
     &:hover {

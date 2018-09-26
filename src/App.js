@@ -8,13 +8,7 @@ import * as reducers from './store/reducers';
 
 class App extends Component {
   render() {
-    /* eslint-disable no-underscore-dangle */
-    const store = createStore(
-      combineReducers(reducers),
-      window.__REDUX_DEVTOOLS_EXTENSION__ &&
-        window.__REDUX_DEVTOOLS_EXTENSION__()
-    );
-    /* eslint-enable */
+    const store = createStore(combineReducers(reducers));
     return (
       <Provider store={store}>
         <BrowserRouter>
