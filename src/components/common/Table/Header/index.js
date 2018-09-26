@@ -2,7 +2,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const header = ({ columns }) => {
+const Header = ({ columns }) => {
   return (
     <tr>
       {columns.map((column, i) => (
@@ -12,8 +12,8 @@ const header = ({ columns }) => {
   );
 };
 
-header.propTypes = {
+Header.propTypes = {
   columns: PropTypes.arrayOf(PropTypes.object).isRequired
 };
 
-export default header;
+export default Header;
