@@ -1,3 +1,4 @@
 import React from 'react';
+import Layout from 'Components/Layout';
 
-export default () => <div>hello world</div>;
+export default () => <Layout><div>hello world</div></Layout>;
